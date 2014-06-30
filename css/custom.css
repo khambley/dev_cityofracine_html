@@ -1,0 +1,370 @@
+@charset "utf-8";
+/* 
+Project: City of Racine Website - Markup Only
+Developer: Katherine L. Hambley
+Date Created: June 4, 2014
+*/
+body {
+	background-image: url("../imgs/graybg.gif");
+	/*background-color: #e7f1f1;*/
+	font-family: "proxima-nova", sans-serif;
+	/*font-family: "Cantarell", sans-serif;*/
+	}
+#carousel-main {
+	background-color: #2775bf;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	padding-left: 0;
+	padding-right: 0;
+}
+.margin-top {
+	margin-top: -70px;
+	}
+h4 {
+	color: #FFF;
+}
+h5 {
+	font-size: 1.2em;
+	margin: 0;
+	}
+.bold {
+	font-weight: bold;
+	}
+.row3 {
+	background-color: #14426a;
+	text-align: center;
+	}
+.col-lg-12 {
+	padding-left: 0;
+	padding-right: 0;	
+}
+.link {
+	color: #bedfff;
+}
+.link:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+.header-img {
+	width: 100%;
+	max-height: 200px;
+	}
+.carousel-img {
+	margin: 0 auto;
+	max-height: 400px;
+	}
+.header {
+	position: relative;
+	z-index: 2;
+	}
+.header-logo {
+	position: absolute;
+	z-index: 3;
+	margin-left: 15%;
+	max-height: 100px;
+	}
+.header-title {
+	position: absolute;
+	z-index: 3;
+	margin-left: 27%;
+	margin-top: 5.0%;
+	color: #FFF;
+	}
+.mobile {
+	margin-left: 10%;
+	margin-top: 1%;
+	z-index: 99;
+	}
+.logo-symbol {
+	/*margin-top: -10px;*/
+	margin-bottom: 10px;
+}
+.border-right {
+	border-right: 1px solid #0D3557;
+	}
+	
+/* Upper Navigation Bar */
+.upper-nav {
+	background-color: #105c92;
+	height: 27px;
+}
+.navbar {
+	min-height: 15px !important;
+	max-width: 1500px;
+	background: #105c92;
+	border-bottom: none;
+	}
+.navbar-nav > li > a {padding-top:3px !important; padding-bottom:3px !important;}
+.navbar .nav > li > a {color: #FFF;}
+.navbar .nav > li > a:hover {color: #bedfff; background-color: #14426a;}
+.navbar .nav .active > a,.navbar .nav .active > a:hover {color: #bedfff;background-color: #14426a;}
+.navbar-nav.navbar-right:last-child {margin-right: 15px;}
+.navbar-inverse .navbar-toggle {
+	color: white;
+	font-weight: bold;
+}
+
+.navbar-inverse .navbar-toggle:hover .nav-toggle:active {
+	background-color: #105c92;
+	color: #bedfff;
+}
+.navbar-inverse .navbar-toggle .glyphicon {
+	color: white;
+}
+.navbar-inverse .navbar-toggle:hover .glyphicon {
+	color: #bedfff;
+}
+.navbar-toggle {
+	border: none;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding: 2px 2px;
+	}
+
+.nav-main {
+	margin-top: 20px;
+	padding: 20px 15px 10px 15px;
+	-webkit-border-radius: 5px;
+	}
+.no-padding-top {
+	padding-top: 0;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 0;
+	}
+.search-field {
+	height: 25px;
+	width: 200px;
+	display: inline;
+	margin-right: 0;
+	margin-left: 10px;
+	}
+.search-submit {
+	height: 25px;
+	margin-left: -2px;
+	background: #8bc53e;
+	border: 0px;
+	}
+.glyphicon-search {
+	color: #fff;
+	top: -1px;
+	font-weight: 400;
+	}
+.blue-bg {
+	background-color: #78b4ee;
+	}
+.green-bg {
+	background-color: #8bc53e;
+	}
+.yellow-bg {
+	background-color: #FFCF4D;
+}
+.gray-bg {
+	background-color: #C5C5C5;
+	}
+.btn {
+	margin-bottom: 0px;
+	}
+.symbol-top {
+	padding-bottom: 10px;
+	color: white;
+	}
+.nav-heading {
+	font-weight: bold;
+	}
+.btn-custom {
+	font-family: "open-sans-condensed", sans-serif;
+	font-weight: 700;
+	color: #FFF;
+	font-size: 1em;
+	text-align: left;
+	padding-left: 15px;
+	}
+.btn-dept {
+	color: #14426a;
+	width: 100%;
+	font-size: 1.1em;
+	padding: 18px 15px 15px 18px;
+	margin-bottom: 3px;
+	}
+.btn-fire-dept {
+	color: #FFF;
+	background: #B5191C;
+	}
+.btn-police-dept {
+	color: #FFF;
+	background: #0C4DB1;
+	}
+.btn-blue {
+	background-color: #14426a;
+	border-color: #14426a;
+	}
+.btn-green {
+	background-color: #477B03;
+	border-color: #477B03;
+	}
+.btn-green:hover,
+.btn-green:focus,
+.btn-green:active,
+.btn-green.active {
+	background-color: #61941D;
+	border-color: #477B03;
+	color: #fff;
+	}
+.btn-yellow {
+	background-color: #FFBB00;
+	border-color: #EBAC01;
+	}
+.btn-yellow:hover,
+.btn-yellow:focus,
+.btn-yellow:active,
+.btn-yellow.active {
+	background-color: #FFC824;
+	border-color: #FFC824;
+	color: #FFF;
+	}
+.btn-gray {
+	background-color: #3F3F3F;
+	border-color: #949494;
+	}
+.btn-gray:hover,
+.btn-gray:focus,
+.btn-gray:active,
+.btn-gray.active {
+	background-color: #949494;
+	border-color: #949494;
+	color: #FFF;
+	}
+.fa-caret-right {
+	padding-top: 3px;
+	padding-right: 10px;
+	}
+.fa-tree {
+	padding-bottom: 2px;
+	}
+.no-padding {
+	padding-left: 2px;
+	padding-right: 2px;
+	}
+.row6 {
+	background: url(../imgs/blue-pattern-bg.jpg) no-repeat;
+	margin-top: 2%;
+	padding-bottom: 2%;
+	}
+/* Inner Pages Styling*/
+.container {
+	/*z-index: 99;*/
+	background: #f7f7f7;
+	margin-top: -5%;
+	width: 70%;
+	min-height: 700px;
+	padding: 50px 30px 30px 30px;
+	position: relative;
+	}
+footer {
+	background: #14426a;
+	min-height: 200px;
+	padding: 35px 15px;
+	color: #FFF;
+	}
+.margin-bottom {
+	margin-bottom: 8px;
+	}
+/*Added breakpoints for responsive text*/
+@media (max-width: 1050px) {
+	.container {
+		width: 100%;
+		}
+	}
+@media (max-width: 500px) {
+		h5 {
+			font-size: .7em;
+			}
+		h4 {
+			font-size: .9em;
+			}
+		h3 {
+			font-size: 1em;
+			}
+		.col-xs-2 {
+			padding-left: 0;
+			padding-right: 0;
+			}
+}
+
+@media (max-width: 600px) and (min-width: 500px) {
+		h5 {
+			font-size: .7em;
+			}
+		h4 {
+			font-size: 1em;
+			}
+		h3 {
+			font-size: 1.2em;
+			}
+}
+@media (max-width: 700px) and (min-width: 600px) {
+		h5 {
+			font-size: .7em;
+			}
+		h4 {
+			font-size: 1.2em;
+			}
+		h3 {
+			font-size: 1.2em;
+			}
+}
+@media (max-width: 1370px) {
+	.btn-custom {
+		padding-left: 5px;
+		}
+	}
+@media (min-width: 1200px) and (max-width: 1310px) {
+	h5 {
+		font-size: 1em;
+		}
+	.btn-custom {
+		font-size: .9em;
+		}
+	}
+
+@media (min-width: 885px) and (max-width: 1199px) {
+	h5 {
+		font-size: .9em;
+		}
+	.header-title {
+		margin-top: 5%;
+		}
+	#carousel-main {
+		margin-top: -40px;
+		}
+	}
+@media (max-width: 884px) {
+	h5 {
+		font-size: .8em;
+		}
+	.header-title {
+		margin-top: 4.5%;
+		}
+	.mobile {
+		margin-left: 5%;
+		margin-top: 1%;
+		z-index: 99;
+		}
+		.margin-top {
+			margin-top: -30px;
+			}
+	}
+@media (max-width: 775px) {
+	.margin-top {
+		margin-top: 0px;
+		}
+	}
+@media (max-width: 370px) {
+	.header-title {
+		font-size: .85em;
+		}
+	}
+
+
