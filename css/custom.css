@@ -21,8 +21,12 @@ body {
 .margin-top {
 	margin-top: -70px;
 	}
+p {
+	line-height: 1.2em;
+	}
 h4 {
 	color: #FFF;
+	line-height: 1.2;
 }
 h5 {
 	font-size: 1.2em;
@@ -126,6 +130,7 @@ h5 {
 	margin-top: 20px;
 	padding: 20px 15px 10px 15px;
 	-webkit-border-radius: 5px;
+	max-height: 274px;
 	}
 .no-padding-top {
 	padding-top: 0;
@@ -173,6 +178,9 @@ h5 {
 .nav-heading {
 	font-weight: bold;
 	}
+.mayor-pic {
+	padding-bottom: 5%;
+	}
 .btn-custom {
 	font-family: "open-sans-condensed", sans-serif;
 	font-weight: 700;
@@ -195,6 +203,9 @@ h5 {
 .btn-police-dept {
 	color: #FFF;
 	background: #0C4DB1;
+	}
+.btn-mayor {
+	margin-bottom: 6%;
 	}
 .btn-blue {
 	background-color: #14426a;
