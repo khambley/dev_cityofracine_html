@@ -18,24 +18,29 @@ body {
 	padding-left: 0;
 	padding-right: 0;
 }
+h3 {
+	font-size: 20px;
+	}
 .margin-top {
 	margin-top: -70px;
-	}
+}
 p {
 	line-height: 1.2em;
-	}
-h4 {
+}
+.link-heading {
+	font-size: 1.2em;
 	color: #FFF;
 	line-height: 1.2;
 }
 h5 {
-	font-size: 1.2em;
+	font-size: 1em;
 	margin: 0;
-	}
+}
 .bold {
 	font-weight: bold;
 	}
 .row3 {
+	padding-top: 1%;
 	background-color: #14426a;
 	text-align: center;
 	}
@@ -127,7 +132,7 @@ h5 {
 	}
 
 .nav-main {
-	margin-top: 20px;
+	margin-top: 5px;
 	padding: 20px 15px 10px 15px;
 	-webkit-border-radius: 5px;
 	height: 280px;
@@ -137,6 +142,10 @@ h5 {
 	padding-right: 0;
 	padding-left: 0;
 	padding-bottom: 0;
+	}
+.no-margin {
+	margin-top: 0;
+	margin-bottom: 5px;
 	}
 .search-field {
 	height: 25px;
@@ -283,8 +292,24 @@ h5 {
 footer {
 	background: #14426a;
 	min-height: 200px;
-	padding: 35px 15px;
+	padding: 15px 15px 35px 15px;
 	color: #FFF;
+	}
+.footer-nav {
+	text-decoration: none;
+	list-style: none;
+	margin-top: 10px;
+	margin-left: 15px;
+	}
+.footer-nav h5 {
+	margin-bottom: 5px;
+	margin-left: 2px;
+	}
+.footer-nav li a {
+	text-decoration: none;
+	}
+.spacer {
+	height: 50px;
 	}
 .margin-bottom {
 	margin-bottom: 8px;
@@ -296,12 +321,12 @@ footer {
 		}
 	}
 @media (max-width: 500px) {
-		h5 {
+		/*h5 {
 			font-size: .7em;
-			}
-		h4 {
+			}*/
+		/*h4 {
 			font-size: .9em;
-			}
+			}*/
 		h3 {
 			font-size: 1em;
 			}
@@ -312,9 +337,9 @@ footer {
 }
 
 @media (max-width: 600px) and (min-width: 500px) {
-		h5 {
+		/*h5 {
 			font-size: .7em;
-			}
+			}*/
 		h4 {
 			font-size: 1em;
 			}
@@ -323,9 +348,9 @@ footer {
 			}
 }
 @media (max-width: 700px) and (min-width: 600px) {
-		h5 {
+		/*h5 {
 			font-size: .7em;
-			}
+			}*/
 		h4 {
 			font-size: 1.2em;
 			}
@@ -348,9 +373,9 @@ footer {
 	}
 
 @media (min-width: 885px) and (max-width: 1199px) {
-	h5 {
+	/*h5 {
 		font-size: .9em;
-		}
+		}*/
 	.header-title {
 		margin-top: 5%;
 		}
@@ -359,9 +384,9 @@ footer {
 		}
 	}
 @media (max-width: 884px) {
-	h5 {
+	/*h5 {
 		font-size: .8em;
-		}
+		}*/
 	.header-title {
 		margin-top: 4.5%;
 		}
@@ -374,8 +399,10 @@ footer {
 			margin-top: -30px;
 			}
 	}
-@media (max-width: 775px) {
-	
+@media (max-width: 783px) {
+	.spacer {
+		height: 0px;
+		}
 	}
 @media (max-width: 370px) {
 	.header-title {
