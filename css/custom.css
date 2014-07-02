@@ -301,15 +301,23 @@ footer {
 	margin-top: 10px;
 	margin-left: 15px;
 	}
-.footer-nav h5 {
-	margin-bottom: 5px;
-	margin-left: 2px;
-	}
 .footer-nav li a {
 	text-decoration: none;
 	}
-.spacer {
-	height: 50px;
+.copyright {
+	background-color: #14426a;
+	color: #FFF;
+	min-height: 100px;
+	}
+.footer-logo {
+	background-image: url(../imgs/racine-logo-symbol.png);
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+	min-height: 55px;
+}
+.boilerplate {
+	margin-top: -30px;
+	margin-right: 70px;
 	}
 .margin-bottom {
 	margin-bottom: 8px;
@@ -400,9 +408,19 @@ footer {
 			}
 	}
 @media (max-width: 783px) {
-	.spacer {
-		height: 0px;
+	.footer-logo {
+		margin-top: -30px;
+		margin-bottom: 2%;
+		background-image: url(../imgs/racine-logo-symbol.png);
+		background-repeat: no-repeat;
+		background-position: 50% 0%;
+		min-height: 55px;
 		}
+	.boilerplate {
+	margin-top: 0px;
+	margin-right: 20%;
+	margin-left: 20%
+	}
 	}
 @media (max-width: 370px) {
 	.header-title {
