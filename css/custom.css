@@ -145,6 +145,13 @@ h5 {
 	margin-right: 0;
 	margin-left: 10px;
 	}
+.search-field2 {
+	height: 25px;
+	width: 60%;
+	display: inline;
+	margin-top: .5%;
+	margin-bottom: .5%;
+	}
 .search-submit {
 	height: 25px;
 	margin-left: -2px;
