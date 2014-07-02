@@ -130,7 +130,7 @@ h5 {
 	margin-top: 20px;
 	padding: 20px 15px 10px 15px;
 	-webkit-border-radius: 5px;
-	max-height: 274px;
+	height: 280px;
 	}
 .no-padding-top {
 	padding-top: 0;
@@ -368,13 +368,14 @@ footer {
 			}
 	}
 @media (max-width: 775px) {
-	.margin-top {
-		margin-top: 0px;
-		}
+	
 	}
 @media (max-width: 370px) {
 	.header-title {
 		font-size: .85em;
+		}
+		.margin-top {
+		margin-top: 0px;
 		}
 	}
 
