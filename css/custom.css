@@ -286,6 +286,60 @@ p {
 	padding: 50px 30px 30px 30px;
 	position: relative;
 	}
+.ui-accordion .ui-accordion-header {
+	background: #FFF;
+	padding: 7px 10px;
+	border-radius: 4px 4px 0 0;
+	color: #3a75c4;
+	font-family: "open-sans-condensed", sans-serif;
+	font-weight: bold;
+	}
+.ui-accordion .ui-accordion-header a {
+	color: #3a75c4;
+}
+.ui-accordion .ui-accordion-header a:hover {
+	color: #8bc53e;
+	}
+.ui-accordion .ui-accordion-content {
+	padding: .2em 2em;
+	}
+.ui-accordion .ui-accordion-icons {
+	padding-left: 1.8em;
+	}
+.ui-state-active {
+	border: 0px;
+	}
+.ui-state-default {
+	border: 0px;
+	}
+.ui-widget-content {
+	border: 0px;
+	}
+.ui-state-focus {
+	border: 0px;
+	}
+.ui-state-active .ui-icon {
+    background-image: url(../imgs/ui-icons_3a75c4_256x240.png);
+}
+.ui-state-default .ui-icon {
+    background-image: url(../imgs/ui-icons_3a75c4_256x240.png);
+}
+.ui-state-hover .ui-icon {
+		background-image: url(../imgs/ui-icons_8bc53e_256x240.png);
+	}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+	border: 0px;
+	}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	border: 0px;
+	}	
+.ui-widget-content a {
+	color: #5e5e5e;
+	padding-right: 10px;
+	background: url(../imgs/link-arrow-yellow.png) no-repeat right;
+	font-size: .8em;
+	font-weight: normal;
+}
 footer {
 	background: #14426a;
 	min-height: 200px;

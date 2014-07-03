@@ -61,10 +61,20 @@ Date Created:   June 4, 2014
 <!-- Row 3 -->
 <div class="container">
   <div class="row">
-  	<div class="col-lg-4 col-md-4">
+  	<div class="col-lg-4 col-md-4 col-sm-4">
     	<div id="accordion">
-  			<h3>CITY</h3>
- 			    <div></div>
+  			<h3><a href="#">CITY</a></h3>
+ 			    <div id="subaccordion1">
+                <h4>MAYOR<h4>
+                <div>
+                    <a class="menulink" href="#">Link Item 1</a><br />
+                    <a class="menulink" href="#">Link Item 2</a>
+                </div>
+                <h3><a href="#">CITY ADMINISTRATOR</a></h3>
+                <div>
+                    List item two<br />
+                </div>
+          </div> <!--End subaccordion1-->
   			<h3>GOVERNMENT</h3>
   				<div></div>
   			<h3>DEPARTMENTS</h3>
@@ -93,11 +103,20 @@ Date Created:   June 4, 2014
   <script>
   $(function() {
     var icons = {
-      header: "ui-icon-circle-arrow-e",
-      activeHeader: "ui-icon-circle-arrow-s"
+      header: "ui-icon-triangle-1-e",
+      activeHeader: "ui-icon-triangle-1-s"
     };
     $( "#accordion" ).accordion({
-      icons: icons
+      icons: icons,
+			collapsible: true,
+			heightStyle: "content",
+			active: false
+    });
+		$( "#subaccordion1" ).accordion({
+      icons: icons,
+			collapsible: true,
+			heightStyle: "content",
+			active: false
     });
   });
   </script>
