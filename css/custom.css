@@ -276,6 +276,7 @@ p {
 	margin-top: 2%;
 	padding-bottom: 2%;
 	}
+
 /* Inner Pages Styling*/
 .container {
 	/*z-index: 99;*/
@@ -286,6 +287,29 @@ p {
 	padding: 50px 30px 30px 30px;
 	position: relative;
 	}
+/* Left Menu Nav Accordion Styling*/
+#leftmenunav .accordion-group {
+	margin-bottom: 0px;
+	border:0px;
+	-webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+#leftmenunav .accordion-heading {
+	background-color: #EDEDED;
+	padding: 7px 10px;
+	border-radius: 4px 4px 0 0;
+	color: #14426a;
+	font-weight: bold;
+	height: 34px;
+	}
+#leftmenunav .accordion-heading a {
+	color: #14426a;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* Footer Styling*/
 footer {
 	background: #14426a;
 	min-height: 200px;

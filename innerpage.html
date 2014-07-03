@@ -9,22 +9,17 @@
 Developer: Katherine L. Hambley
 Description: City of Racine Website - Main Page HTML/CSS Markup only
 Date Created:   June 4, 2014
-Date Modified:  June 9, 2014 - added max height to skyline image and carousel images
-							 June 11, 2014 - add borders on LIVE, WORK, PLAY, CITY buttons
-														 - modified "the wave" in Photoshop, added lime green color
-                             - added upper navigation, fixed to top.
-                             - not crazy about the logo??
-               June 12, 2014 - Middle navigation, 
-               June 13, 2014 - Changed header graphic, just for another option to show them.
-               June 24, 2014 - Adding inner page mockup with vertical accordion menu
 ------------------------>
 <!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Cantarell:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
   <script type="text/javascript" src="//use.typekit.net/rut0mak.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<link href="css/custom.css" rel="stylesheet" />
   <link href="css/font-awesome.min.css" rel="stylesheet" />
+  
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -68,9 +63,147 @@ Date Modified:  June 9, 2014 - added max height to skyline image and carousel im
 <!-- Row 3 -->
 <div class="container">
   <div class="row">
+  	<!--This is the leftmenunav accordion container-->
   	<div class="col-lg-4 col-md-4">
-    	This is the accordion container
-    </div>
+    	<div class="accordion" id="leftmenunav">
+      	<div class="accordion-group">
+        	<div class="accordion-heading">
+          	<a class="accordion-toggle" data-toggle="collapse" data-parent="#leftmenunav" href="#">
+            <i class="fa fa-home"></i> CITY HOME
+            </a>
+          </div> <!--End accordion-heading-->
+        </div> <!--End accordion-group-->
+      <div class="accordion-group">
+      	<div class="accordion-heading">
+        	<a class="accordion-toggle" data-toggle="collapse" data-parent="#leftmenunav" href="#collapse2">
+          <i class="fa fa-institution"></i> <i class="indicator fa fa-caret-down">GOVERNMENT
+          </a>
+        </div> <!--End accordion-heading-->
+        <div id="collapse2" class="accordion-body collapse" style="height: 0px;">
+        	<div class="accordion-inner">
+          
+            <!-- Here we insert another nested accordion -->
+            <!--<div class="accordion" id="leftmenunav2">
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftmenunav2" href="#collapseInner1">
+                    MAYOR
+                  </a>
+                </div>
+                <div id="collapseInner1" class="accordion-body collapse in">
+                  <div class="accordion-inner">
+                   MAYOR'S CORNER
+                   PAST MAYORS
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftmenunav2" href="#collapseInner2">
+                    CITY ADMINISTRATOR
+                  </a>
+                </div>
+                <div id="collapseInnerTwo" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    CITY ADMINISTRATOR
+                  </div>
+                </div>
+              </div>
+            </div> -->         
+            <!-- Inner accordion ends here -->
+            
+          </div> <!--End accordion-inner-->
+        </div> <!--End collapseTwo-->
+      </div> <!--End accordion-group-->
+      
+      <div class="accordion-group">
+      	<div class="accordion-heading">
+        	<a class="accordion-toggle" data-toggle="collapse" data-parent="#leftmenunav" href="#collapse2">
+          <i class="fa fa-cubes"></i> <i class="indicator fa fa-caret-up"> DEPARTMENTS
+          </a>
+        </div> <!--End accordion-heading-->
+        <div id="collapse2" class="accordion-body collapse" style="height: 0px;">
+        	<div class="accordion-inner">
+          	<ul>
+            	<li>This is a link 1.</li>
+              <li>This is a link 2.</li>
+              <li>This is a link 3.</li>
+            </ul>
+          </div> <!--End accordion-inner-->
+        </div> <!--End collapseTwo-->
+      </div> <!--End accordion-group-->
+      
+      <div class="accordion-group">
+      	<div class="accordion-heading">
+        	<a class="accordion-toggle" data-toggle="collapse" data-parent="#leftmenunav" href="#collapse3">
+          <i class="fa fa-cubes"></i> <i class="indicator fa fa-caret-up"> DISTRICTS
+          </a>
+        </div> <!--End accordion-heading-->
+        <div id="collapse3" class="accordion-body collapse" style="height: 0px;">
+        	<div class="accordion-inner">
+          	<ul>
+            	<li>This is a link 1.</li>
+              <li>This is a link 2.</li>
+              <li>This is a link 3.</li>
+            </ul>
+          </div> <!--End accordion-inner-->
+        </div> <!--End collapseTwo-->
+      </div> <!--End accordion-group-->
+      
+      <div class="accordion-group">
+      	<div class="accordion-heading">
+        	<a class="accordion-toggle" data-toggle="collapse" data-parent="#leftmenunav" href="#collapse4">
+          <i class="fa fa-cubes"></i> <i class="indicator fa fa-caret-up"> PARKS &amp; BEACHES
+          </a>
+        </div> <!--End accordion-heading-->
+        <div id="collapse4" class="accordion-body collapse" style="height: 0px;">
+        	<div class="accordion-inner">
+          	<ul>
+            	<li>This is a link 1.</li>
+              <li>This is a link 2.</li>
+              <li>This is a link 3.</li>
+            </ul>
+          </div> <!--End accordion-inner-->
+        </div> <!--End collapseTwo-->
+      </div> <!--End accordion-group-->
+      
+      <div class="accordion-group">
+      	<div class="accordion-heading">
+        	<a class="accordion-toggle" data-toggle="collapse" data-parent="#leftmenunav" href="#collapse5">
+          <i class="fa fa-cubes"></i> <i class="indicator fa fa-caret-up"> COMMUNITY PROGRAMS &amp; SERVICES
+          </a>
+        </div> <!--End accordion-heading-->
+        <div id="collapse5" class="accordion-body collapse" style="height: 0px;">
+        	<div class="accordion-inner">
+          	<ul>
+            	<li>This is a link 1.</li>
+              <li>This is a link 2.</li>
+              <li>This is a link 3.</li>
+            </ul>
+          </div> <!--End accordion-inner-->
+        </div> <!--End collapseTwo-->
+      </div> <!--End accordion-group-->
+      
+      <div class="accordion-group">
+      	<div class="accordion-heading">
+        	<a class="accordion-toggle" data-toggle="collapse" data-parent="#leftmenunav" href="#collapse5">
+          <i class="fa fa-cubes"></i> <i class="indicator fa fa-caret-up"> ARTS &amp; CULTURE
+          </a>
+        </div> <!--End accordion-heading-->
+        <div id="collapse5" class="accordion-body collapse" style="height: 0px;">
+        	<div class="accordion-inner">
+          	<ul>
+            	<li>This is a link 1.</li>
+              <li>This is a link 2.</li>
+              <li>This is a link 3.</li>
+            </ul>
+          </div> <!--End accordion-inner-->
+        </div> <!--End collapseTwo-->
+      </div> <!--End accordion-group-->
+      
+      </div> <!--End accordion-->
+    </div> <!--End row-->
+    
     <div class="col-lg-8 col-md-8">
       This is the main content container
     </div>
@@ -79,8 +212,18 @@ Date Modified:  June 9, 2014 - added max height to skyline image and carousel im
 </div> <!--End container-fluid-->
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>-->
+  <script>
+		$(document).ready(function() {
+			$('#accordion .accordion-toggle').click(function (e){
+			var caretState = $(e.target).siblings("i.indicator").toggleClass('fa-caret-down fa-caret-up');
+			$("i.indicator").not(caretState).removeClass("fa-caret-down").addClass("fa-caret-up");
+			});
+		});
+  </script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
+  
 
   
 </body>
