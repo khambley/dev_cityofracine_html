@@ -63,29 +63,54 @@ Date Created:   June 4, 2014
   <div class="row">
   	<div class="col-lg-4 col-md-4 col-sm-4">
     	<div id="accordion">
-  			<h3><a href="#">CITY</a></h3>
- 			    <div id="subaccordion1">
-                <h4>MAYOR<h4>
+  			<h3><a href="#"><i class="fa fa-lg fa-home"></i> &nbsp;CITY HOME</a></h3>
+ 			    <div></div>
+  			<h3><i class="fa fa-institution"></i> &nbsp;GOVERNMENT</h3>
+        		<div>
+        		<a class="menulink" href="#">City Buildings</a><br />
+            <a class="menulink" href="#">Codes & Ordinances</a><br />
+            <a class="menulink" href="#">Courts</a><br />
+            <a class="menulink" href="#">Districts</a><br />
+            <a class="menulink" href="#">Government Calendar</a><br />
+            <a class="menulink" href="#">Government Directory</a><br />
+            <a class="menulink" href="#">Mayor's Office</a><br />
+            <a class="menulink" href="#">Poll Locations</a><br />
+            <a class="menulink" href="#">Voting Information</a><br />
+            
+            </div>
+  				<!--<div id="subaccordion1">
+                <h4><a href="#">City Buildings</a></h4>
+                  <div></div>
+                <h4>Courts</h4>
                 <div>
                     <a class="menulink" href="#">Link Item 1</a><br />
-                    <a class="menulink" href="#">Link Item 2</a>
+                    <a class="menulink" href="#">Link Item 2</a><br />
                 </div>
-                <h3><a href="#">CITY ADMINISTRATOR</a></h3>
+                <h4>Districts</h4>
                 <div>
-                    List item two<br />
+                    <a class="menulink" href="#">Link Item 1</a><br />
+                    <a class="menulink" href="#">Link Item 2</a><br />
                 </div>
-          </div> <!--End subaccordion1-->
-  			<h3>GOVERNMENT</h3>
-  				<div></div>
-  			<h3>DEPARTMENTS</h3>
+          </div>--> <!--End subaccordion1-->
+  			<h3><i class="fa fa-cubes"></i> &nbsp;DEPARTMENTS</h3>
          <div>
-            <ul>
-              <li>List item one</li>
-              <li>List item two</li>
-              <li>List item three</li>
-            </ul>
+            <a class="menulink" href="#">Assessor</a><br />
+            <a class="menulink" href="#">Attorney</a><br />
+            <a class="menulink" href="#">Building Inspection</a><br />
+            <a class="menulink" href="#">Belle TV</a><br />
+            <a class="menulink" href="#">Cemetaries</a><br />
+            <a class="menulink" href="#">Clerk</a><br />
+            <a class="menulink" href="#">Development</a><br />
+            <a class="menulink" href="#">Fair Housing</a><br />
+            <a class="menulink" href="#">Finance</a><br />
         </div>
-  			<h3>DISTRICTS</h3>
+  			<h3><i class="fa fa-group"></i> &nbsp;&nbsp;COMMUNITY</h3>
+  				<div></div>
+        <h3><i class="glyphicon glyphicon-tree-deciduous"></i> &nbsp;&nbsp;PARKS & RECREATION</h3>
+  				<div></div>
+        <h3><i class="fa fa-support"></i> &nbsp;&nbsp;PROGRAMS & SERVICES</h3>
+  				<div></div>
+        <h3><i class="fa fa-smile-o"></i> &nbsp;&nbsp;ARTS & CULTURE</h3>
   				<div></div>
 			</div> <!--End accordion-->
     </div>
@@ -107,15 +132,17 @@ Date Created:   June 4, 2014
       activeHeader: "ui-icon-triangle-1-s"
     };
     $( "#accordion" ).accordion({
-      icons: icons,
+			icons: false,
 			collapsible: true,
 			heightStyle: "content",
+			header: "h3",
 			active: false
     });
 		$( "#subaccordion1" ).accordion({
       icons: icons,
 			collapsible: true,
 			heightStyle: "content",
+			header: "h4",
 			active: false
     });
   });

@@ -278,21 +278,25 @@ p {
 	}
 /* Inner Pages Styling*/
 .container {
-	/*z-index: 99;*/
-	background: #f7f7f7;
+	/*background: #f7f7f7;*/
 	margin-top: -5%;
 	width: 70%;
 	min-height: 700px;
 	padding: 50px 30px 30px 30px;
 	position: relative;
 	}
+#accordion {
+	width: 80%;
+	}
 .ui-accordion .ui-accordion-header {
 	background: #FFF;
-	padding: 7px 10px;
-	border-radius: 4px 4px 0 0;
+	background-image: linear-gradient(white, #EBEBEB);
+	padding: 11px 10px;
 	color: #3a75c4;
 	font-family: "open-sans-condensed", sans-serif;
 	font-weight: bold;
+	text-transform: uppercase;
+	
 	}
 .ui-accordion .ui-accordion-header a {
 	color: #3a75c4;
@@ -333,13 +337,17 @@ p {
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
 	border: 0px;
 	}	
-.ui-widget-content a {
+a.menulink {
 	color: #5e5e5e;
+	margin-left: 10px;
 	padding-right: 10px;
 	background: url(../imgs/link-arrow-yellow.png) no-repeat right;
-	font-size: .8em;
+	font-size: .7em;
 	font-weight: normal;
 }
+.fa-institution {
+	margin-left: 2px;
+	}
 footer {
 	background: #14426a;
 	min-height: 200px;
