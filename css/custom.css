@@ -337,6 +337,9 @@ a.breadcrumbs:hover {
 .ui-accordion .ui-accordion-icons {
 	padding-left: 1.8em;
 	}
+.ui-accordion .ui-accordion-header-active {
+	border: 0px;
+	}
 .ui-state-active {
 	border: 0px;
 	}
@@ -358,7 +361,7 @@ a.breadcrumbs:hover {
 .ui-state-hover .ui-icon {
 		background-image: url(../imgs/ui-icons_8bc53e_256x240.png);
 	}
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+.ui-accordion .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
 	border: 0px;
 	}
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
