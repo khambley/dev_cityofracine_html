@@ -9,6 +9,7 @@ body {
 	font-family: "proxima-nova", sans-serif;
 	/*font-family: "Cantarell", sans-serif;*/
 	letter-spacing: .3px;
+	font-size: 16px;
 	}
 #carousel-main {
 	background-color: #2775bf;
@@ -290,7 +291,8 @@ p {
 	min-height: 500px;
 	}
 .main-content {
-	margin-top: 100px;
+	margin-top: 80px;
+	margin-left: 5px;
 	}
 .breadcrumbs {
 	color: #A3A3A3;
@@ -312,6 +314,14 @@ a.breadcrumbs:hover {
 .accordion {
 	width: 96%;
 	}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+	border: 0;
+	background: #ffffff;
+	font-weight: normal;
+	color: #8dc63f;
+}
 .ui-accordion .ui-accordion-header {
 	background: #FFF;
 	background-image: linear-gradient(white, #EBEBEB);
@@ -324,6 +334,12 @@ a.breadcrumbs:hover {
 .subaccordion .white-bg {
 	background: #FFF;
 	background-image: none;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	}
+.subaccordion .ui-accordion-content .ui-accordion-header {
+	padding-top: 2px;
+	padding-bottom: 2px;
 	}
 .ui-accordion .ui-accordion-header a {
 	color: #3a75c4;
@@ -331,8 +347,11 @@ a.breadcrumbs:hover {
 .ui-accordion .ui-accordion-header a:hover {
 	color: #8bc53e;
 	}
+.ui-accordion .ui-accordion-header a:focus {
+	color: #8dc63f;
+	}
 .ui-accordion .ui-accordion-content {
-	padding: .2em 2em;
+	padding: 1px 20px;
 	}
 .ui-accordion .ui-accordion-icons {
 	padding-left: 1.8em;
@@ -340,8 +359,9 @@ a.breadcrumbs:hover {
 .ui-accordion .ui-accordion-header-active {
 	border: 0px;
 	}
-.ui-state-active {
+a.ui-state-active {
 	border: 0px;
+	color: #8Dc63f;
 	}
 .ui-state-default {
 	border: 0px;
@@ -361,12 +381,13 @@ a.breadcrumbs:hover {
 .ui-state-hover .ui-icon {
 		background-image: url(../imgs/ui-icons_8bc53e_256x240.png);
 	}
-.ui-accordion .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+.ui-accordion-header-active .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
 	border: 0px;
 	}
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
 	border: 0px;
 	}	
+
 a.menulink {
 	color: #5e5e5e;
 	margin-left: 10px;
@@ -377,6 +398,45 @@ a.menulink {
 }
 .fa-institution {
 	margin-left: 2px;
+	}
+/*******Main Content Styling********/
+.page-heading {
+	font-family: "open-sans-condensed", sans-serif;
+	background: #005689;
+	border-radius: 5px;
+	margin-top: 2px;
+	margin-left: -30px;
+	margin-bottom: 10px;
+	padding-left: 30px;
+	}
+h1 {
+	margin: 0;
+	font-size: 2.2em;
+}
+h2 {
+	margin: 0;
+	font-size: 1.5em;
+}
+h3, h4, h5 {
+	font-family: "open-sans-condensed", sans-serif;
+	font-weight: bold;
+	color: #0079C1;
+	}
+h5 {
+	color: #888888;
+}
+.page-title {
+	color: #FFF;
+	padding-top: 10px;
+	padding-bottom: 8px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	}
+.page-subtitle {
+	color: #70B6EE;
+	padding-bottom: 10px;
+	font-weight: bold;
+	letter-spacing: 1px;
 	}
 footer {
 	background: #14426a;
@@ -471,6 +531,25 @@ footer {
 			margin-top: -30px;
 			}
 	}
+@media (max-width: 782px) {
+	.main-content-container {
+		margin-top: 0px;
+		margin-right: 0px;
+		padding-right: 0px;
+		min-height: 500px;
+	}
+	.main-content {
+		margin-top: 0px;
+		}
+	.page-heading {
+		margin-right: 0px;
+		padding-right: 0px;
+		}
+	.container-fluid {
+		padding-right: 0px;
+		padding-left: 0px;
+		}
+	}
 @media (max-width: 765px) {
 	.footer-logo {
 		margin-top: -30px;
@@ -488,6 +567,7 @@ footer {
 	.margin-top {
 		margin-top: 0%;
 		}
+	
 	}
 @media (max-width: 370px) {
 	.header-title {

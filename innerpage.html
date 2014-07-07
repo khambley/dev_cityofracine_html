@@ -53,7 +53,7 @@ Date Created:   June 4, 2014
 <!-- Row 2 -->
 <header class="row hidden-xs">
   <div class="col-lg-12 header">
-    <div class="header-title"><h5>The Official Website of the City of Racine</h5></div>
+    <div class="header-title">The Official Website of the City of Racine</div>
     <a href="#"><img src="imgs/racine-skyline5.png" class="img-responsive header-img" alt="City of Racine Skyline"></a>
   </div>
 </header> <!-- End row 2-->
@@ -87,12 +87,19 @@ Date Created:   June 4, 2014
           			<h4 class="white-bg"><a href="#">Email Web Access</a></h4>
                 <div></div>
                 <h4 class="white-bg"><a href="#">Training</a></h4>
-                  <div>
-                    <a class="menulink" href="#">Ektron CMS</a><br />
+                  <div class="subaccordion">
+                  	<div class="white-bg"><a href="#">Ektron CMS</a></div>
+                      <div>
+                        <a class="menulink" href="#">Welcome</a><br />
+                        <a class="menulink" href="#">Online User Guide</a><br />
+                        <a class="menulink" href="#">1-on-1 Support</a><br />
+                        <a class="menulink" href="#">New Site Request</a><br />
+                        <a class="menulink" href="#">Learning Resources</a><br />
+                      </div>
+                    <div class="white-bg"><a href="#">Job Training</a></div>
                 </div>
                 <h4 class="white-bg"><a href="#">Wellness</a></h4>
                 <div></div>
-                
           </div> <!--End subaccordion1-->
   			<h3><a href="#"><i class="fa fa-institution"></i> &nbsp;GOVERNMENT</a></h3>
         		<div>
@@ -106,27 +113,60 @@ Date Created:   June 4, 2014
               <a class="menulink" href="#">Poll Locations</a><br />
               <a class="menulink" href="#">Voting Information</a><br />
             </div>
-  	
-  			
-  			
         <h3><a href="#"><i class="glyphicon glyphicon-tree-deciduous"></i> &nbsp;&nbsp;PARKS & RECREATION</a></h3>
   				<div></div>
         <h3><a href="#"><i class="fa fa-support"></i> &nbsp;&nbsp;PROGRAMS & SERVICES</a></h3>
   				<div></div>
-        
-        
-          
 			</div> <!--End accordion-->
     </div>
     <div class="col-lg-6 col-md-8 col-sm-8 main-content-container">
       <div class="main-content">
-        <div><a href="#" class="breadcrumbs">Home</a> <i class="fa fa-angle-right"></i> 
+        <div class="hidden-xs"><a href="#" class="breadcrumbs">Home</a> <i class="fa fa-angle-right"></i> 
         												 <a href="#" class="breadcrumbs">Employees</a> <i class="fa fa-angle-right"></i> 
                                  <a href="#" class="breadcrumbs">Training</a> <i class="fa fa-angle-right"></i> 
-                                 <a href="#" class="breadcrumbs br-active">Ektron CMS
+                                 <a href="#" class="breadcrumbs br-active">Ektron CMS</a>
         
+        </div> <!--End breadcrumbs--> 
+        <div class="page-heading">
+        	<h1 class="page-title">Ektron CMS and Web Training</h1>
+          <h2 class="page-subtitle">CMS Guidelines and Standards</h2>
         </div>
-      </div>
+        <div class="row">
+        	<div class="col-lg-9">
+            <p>When creating or editing a site in the Ektron Content Management System (CMS), it's
+             important to keep in mind these guidelines to ensure that new content has a proper layout
+              and consistent styling.</p>
+            <ul>
+              <li><a href="#">Headings</a></li>
+              <li><a href="#">Photos</a></li>
+              <li><a href="#">Copying and pasting</a></li>
+              <li><a href="#">Hyperlinks</a></li>
+              <li><a href="#">Saving vs. Publishing</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Naming New Pages</a></li>
+              <li><a href="#">Javascript and CSS Styling</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+          
+          </div>
+          <div class="col-lg-9">
+          	<h3>Headings</h3>
+            <p>There are three different types of headings you will use for a page: 
+            Heading 3 (H3), Heading 4 (H4), and Heading 5 (H5). Each of them has a 
+            function that helps to visually organize the content of a page:</p>
+            
+            <blockquote><h3>Heading 3 (H3)</h3><p>H3 headings are used to designate larger portions of text. 
+            It is the largest font size on the page and helps the user easily find the sections of information.</p>
+            </blockquote>
+             <blockquote><h4>Heading 4 (H4)</h4><p>H4s are the second largest font size and helps to denote smaller
+             sections of text beneath H3 headings.</p></blockquote>
+             <blockquote><h5>Heading 5 (H5)</h5><p>H5s are the smallest of the three headings, displayed on the page
+             with bold gray text.</p>
+             </blockquote>
+          </div>
+        </div>
+      </div> <!-- End main-content-->
     </div> <!-- End right column-->
     <div class="col-lg-1 visible-lg"></div>
   </div> <!--End row 3-->
@@ -154,7 +194,6 @@ Date Created:   June 4, 2014
       icons: icons,
 			collapsible: true,
 			heightStyle: "content",
-			header: "h4",
 			active: false
     });
   });
