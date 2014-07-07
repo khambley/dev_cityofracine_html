@@ -59,39 +59,26 @@ Date Created:   June 4, 2014
 </header> <!-- End row 2-->
 
 <!-- Row 3 -->
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-  	<div class="col-lg-4 col-md-4 col-sm-4">
-    	<div id="accordion">
+  	<div class="col-lg-2 visible-lg"></div>
+  	<div class="col-lg-3 col-md-4 col-sm-4">
+    	<div class="accordion">
   			<h3><a href="#"><i class="fa fa-lg fa-home"></i> &nbsp;CITY HOME</a></h3>
  			    <div></div>
   			<h3><i class="fa fa-institution"></i> &nbsp;GOVERNMENT</h3>
         		<div>
-        		<a class="menulink" href="#">City Buildings</a><br />
-            <a class="menulink" href="#">Codes & Ordinances</a><br />
-            <a class="menulink" href="#">Courts</a><br />
-            <a class="menulink" href="#">Districts</a><br />
-            <a class="menulink" href="#">Government Calendar</a><br />
-            <a class="menulink" href="#">Government Directory</a><br />
-            <a class="menulink" href="#">Mayor's Office</a><br />
-            <a class="menulink" href="#">Poll Locations</a><br />
-            <a class="menulink" href="#">Voting Information</a><br />
-            
+              <a class="menulink" href="#">City Buildings</a><br />
+              <a class="menulink" href="#">Codes & Ordinances</a><br />
+              <a class="menulink" href="#">Courts</a><br />
+              <a class="menulink" href="#">Districts</a><br />
+              <a class="menulink" href="#">Government Calendar</a><br />
+              <a class="menulink" href="#">Government Directory</a><br />
+              <a class="menulink" href="#">Mayor's Office</a><br />
+              <a class="menulink" href="#">Poll Locations</a><br />
+              <a class="menulink" href="#">Voting Information</a><br />
             </div>
-  				<!--<div id="subaccordion1">
-                <h4><a href="#">City Buildings</a></h4>
-                  <div></div>
-                <h4>Courts</h4>
-                <div>
-                    <a class="menulink" href="#">Link Item 1</a><br />
-                    <a class="menulink" href="#">Link Item 2</a><br />
-                </div>
-                <h4>Districts</h4>
-                <div>
-                    <a class="menulink" href="#">Link Item 1</a><br />
-                    <a class="menulink" href="#">Link Item 2</a><br />
-                </div>
-          </div>--> <!--End subaccordion1-->
+  	
   			<h3><i class="fa fa-cubes"></i> &nbsp;DEPARTMENTS</h3>
          <div>
             <a class="menulink" href="#">Assessor</a><br />
@@ -112,11 +99,28 @@ Date Created:   June 4, 2014
   				<div></div>
         <h3><i class="fa fa-smile-o"></i> &nbsp;&nbsp;ARTS & CULTURE</h3>
   				<div></div>
+        <h3><i class="fa fa-briefcase"></i> &nbsp;&nbsp;EMPLOYEES</h3>
+  				<div class="subaccordion">
+                <h4 class="white-bg"><a href="#">Training</a></h4>
+                  <div>
+                    <a class="menulink" href="#">Ektron CMS</a><br />
+                </div>
+                <h4 class="white-bg"><a href="#">Self-Service Portal</a></h4>
+          </div> <!--End subaccordion1-->
+          
 			</div> <!--End accordion-->
     </div>
-    <div class="col-lg-8 col-md-8">
-      This is the main content container
-    </div> <!-- End left column-->
+    <div class="col-lg-6 col-md-8 col-sm-8 main-content-container">
+      <div class="main-content">
+        <div><a href="#" class="breadcrumbs">Home</a> <i class="fa fa-angle-right"></i> 
+        												 <a href="#" class="breadcrumbs">Employees</a> <i class="fa fa-angle-right"></i> 
+                                 <a href="#" class="breadcrumbs">Training</a> <i class="fa fa-angle-right"></i> 
+                                 <a href="#" class="breadcrumbs br-active">Ektron CMS
+        
+        </div>
+      </div>
+    </div> <!-- End right column-->
+    <div class="col-lg-1 visible-lg"></div>
   </div> <!--End row 3-->
 </div> <!-- End container -->
 </div> <!--End container-fluid-->
@@ -131,14 +135,14 @@ Date Created:   June 4, 2014
       header: "ui-icon-triangle-1-e",
       activeHeader: "ui-icon-triangle-1-s"
     };
-    $( "#accordion" ).accordion({
+    $( ".accordion" ).accordion({
 			icons: false,
 			collapsible: true,
 			heightStyle: "content",
 			header: "h3",
 			active: false
     });
-		$( "#subaccordion1" ).accordion({
+		$( ".subaccordion" ).accordion({
       icons: icons,
 			collapsible: true,
 			heightStyle: "content",
