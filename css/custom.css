@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* 
 Project: City of Racine Website - Markup Only
 Developer: Katherine L. Hambley
@@ -133,7 +133,7 @@ p {
 	margin-top: 5px;
 	padding: 20px 15px 10px 15px;
 	-webkit-border-radius: 5px;
-	height: 280px;
+	min-height: 300px;
 	}
 .no-padding-top {
 	padding-top: 0;
